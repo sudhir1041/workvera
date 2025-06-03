@@ -1,0 +1,119 @@
+##Workvera (Career Gap Job App) – Full Documentation
+#Overview
+A job platform tailored for individuals with career gaps, helping them get job opportunities, upskill, and connect with gap-friendly employers.
+
+# Goals
+Offer gap-friendly job opportunities
+
+Provide grooming via micro-tasks and short courses
+
+Educate employers to focus on skills over resume gaps
+
+Build a supportive job seeker community
+
+# User Roles
+Job Seeker
+
+Create skill-based profile with career gap info
+
+Upload resume and video pitch
+
+Take micro skill assessments
+
+View skill-matched job listings
+
+Receive grooming suggestions
+
+Join community forum
+
+Employer
+
+Post jobs with skill requirements
+
+Mark jobs as gap-friendly
+
+Review skill-ready profiles and badges
+
+Shortlist based on skill tests/video pitches
+
+Admin (Optional)
+
+Manage users, reports, and training resources
+
+# Core Features
+Role-based Onboarding
+
+Firebase Auth for authentication
+
+Skill-based job match
+
+Grooming recommendations
+
+Community forum for support
+
+# Tech Stack
+Layer	Tech Used
+Frontend	React.js
+Backend	Django (DRF)
+Database	MySQL
+Hosting	AWS EC2, RDS, S3
+Dev Tools	GitHub, Postman, Jira
+
+# Development Timeline
+Week 1 – Planning
+
+Finalize features
+
+Define user roles
+
+Create ER diagram and wireframes
+
+Week 2–3 – Backend Setup
+
+Setup Django + MySQL
+
+Create models: User, Profile, JobPost, Application, SkillTest
+
+Build APIs with Django REST Framework
+
+Week 4–5 – Frontend (React)
+
+Build pages:
+
+Signup/Login
+
+Dashboard
+
+Profile Creation
+
+Job Listings
+
+Skill Match
+
+Grooming Suggestions
+
+Week 6 – Integration + Testing
+
+Connect frontend to backend
+
+Test full flow: Register → Profile → Match → Apply
+
+Handle auth, errors
+
+Week 7 – Deployment
+
+Host backend on AWS EC2
+
+Use RDS for MySQL
+
+Frontend on Vercel or AWS S3
+
+Set up domain name
+
+# Bonus (Optional)
+Email Verification (Django + AWS SES)
+
+Admin Dashboard
+
+Basic Analytics (Application count, success rate)
+
