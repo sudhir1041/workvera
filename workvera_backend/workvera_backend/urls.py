@@ -13,7 +13,7 @@ schema_view = get_schema_view(
       default_version='v1',
       description="API documentation for the WorkVera platform, facilitating job seeking and employer connections.",
       terms_of_service="[https://www.mydomain.com/policies/terms/](https://www.mydomain.com/policies/terms/)", 
-      contact=openapi.Contact(email="contact@workvera.local"),   
+      contact=openapi.Contact(email="sudhirkumar@integrationitservices.com"),   
       license=openapi.License(name="BSD License"),             
    ),
    public=True,
