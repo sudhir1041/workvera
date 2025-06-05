@@ -1,13 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Inter', sans-serif;
+  @apply bg-slate-50 text-slate-800 antialiased;
+  scroll-behavior: smooth;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Custom scrollbar for a more modern look (optional) */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  @apply bg-slate-100;
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-slate-400 rounded-full;
+}
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-slate-500;
+}
+
+/* General focus styles for accessibility */
+*:focus-visible {
+  @apply outline-none ring-2 ring-blue-500 ring-offset-2 ring-offset-slate-50 rounded-md;
+}
+
+/* Prose styles (if you use @tailwindcss/typography) can be customized here */
+.prose {
+  @apply text-slate-700;
+}
+.prose h1, .prose h2, .prose h3, .prose h4 {
+  @apply text-slate-900;
+}
+.prose a {
+  @apply text-blue-600 hover:text-blue-700;
+}
+
+/* Add any other global styles or component layer customizations here */
+@layer components {
+  .btn {
+    @apply px-4 py-2 rounded-md font-medium text-sm transition-colors duration-150 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2;
+  }
+  .btn-primary {
+    @apply bg-blue-600 text-white hover:bg-blue-700 focus-visible:ring-blue-500;
+  }
+  .btn-secondary {
+    @apply bg-slate-200 text-slate-700 hover:bg-slate-300 focus-visible:ring-slate-500;
+  }
+  .btn-danger {
+    @apply bg-red-500 text-white hover:bg-red-600 focus-visible:ring-red-500;
+  }
+  .input-base {
+    @apply block w-full px-3 py-2 border border-slate-300 rounded-md shadow-sm placeholder-slate-400 
+           focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm;
+  }
 }
